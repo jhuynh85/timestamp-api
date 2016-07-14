@@ -26,4 +26,9 @@ app.get('/:timestamp', function (req, res) {
     });
 });
 
+// Serve default page
+app.get('/', function(req, res){
+    res.sendFile('index.html', {root: __dirname});
+});
+
 app.listen(8080);
