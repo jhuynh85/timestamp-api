@@ -2,6 +2,7 @@ var moment = require('moment'); // Moment.js for parsing/displaying date
 var express = require('express');
 var app = express();
 var date;
+var port = process.env.PORT || 8080;
 
 app.get('/:timestamp', function (req, res) {
     var unix = null;
@@ -31,4 +32,4 @@ app.get('/', function(req, res){
     res.sendFile('index.html', {root: __dirname});
 });
 
-app.listen(8080);
+app.listen(port);
