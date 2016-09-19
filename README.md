@@ -1,4 +1,4 @@
-# FreeCodeCamp Basejump - Timestamp
+# Timestamp API
 
 JavaScript app that fulfills the following user stories:
  
